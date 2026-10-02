@@ -1,0 +1,2724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IELTS Reading Vocabulary Master | Band 5.0 - 6.5+</title>
+  <style>
+    /* RESET & BASE STYLES */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    }
+
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --primary-light: #eff6ff;
+      --secondary: #475569;
+      --accent: #0ea5e9;
+      --success: #10b981;
+      --success-light: #ecfdf5;
+      --warning: #f59e0b;
+      --warning-light: #fffbebfb;
+      --danger: #ef4444;
+      --danger-light: #fef2f2;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --radius: 12px;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+      --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding-bottom: 60px;
+    }
+
+    /* HEADER & NAV */
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-icon {
+      background: var(--primary);
+      color: white;
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.25rem;
+      box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+    }
+
+    .logo-text h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .logo-text p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .global-progress {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: var(--primary-light);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      border: 1px solid #dbeafe;
+    }
+
+    .progress-bar-wrap {
+      width: 120px;
+      height: 8px;
+      background: #cbd5e1;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: var(--primary);
+      width: 0%;
+      transition: width 0.4s ease;
+    }
+
+    .progress-text {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    nav {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .nav-tab {
+      padding: 1rem 1.25rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: transparent;
+      border: none;
+      border-bottom: 3px solid transparent;
+      cursor: pointer;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s;
+    }
+
+    .nav-tab:hover {
+      color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .nav-tab.active {
+      color: var(--primary);
+      border-bottom-color: var(--primary);
+    }
+
+    /* MAIN CONTENT LAYOUT */
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .tab-section {
+      display: none;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .tab-section.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .section-header {
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 1rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .section-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* BUTTONS & BADGES */
+    .btn {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: var(--radius);
+      border: 1px solid transparent;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-hover);
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+    }
+
+    .btn-outline {
+      background: white;
+      border-color: var(--border);
+      color: var(--text);
+    }
+
+    .btn-outline:hover {
+      background: var(--bg);
+      border-color: var(--secondary);
+    }
+
+    .btn-success {
+      background: var(--success);
+      color: white;
+    }
+
+    .btn-success:hover {
+      background: #059669;
+    }
+
+    .btn-warning {
+      background: var(--warning);
+      color: white;
+    }
+
+    .btn-warning:hover {
+      background: #d97706;
+    }
+
+    .btn-sm {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.825rem;
+    }
+
+    .badge {
+      padding: 0.25rem 0.6rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .badge-pos {
+      background: #e0e7ff;
+      color: #3730a3;
+    }
+
+    .badge-success {
+      background: var(--success-light);
+      color: #065f46;
+    }
+
+    .badge-warning {
+      background: var(--warning-light);
+      color: #92400e;
+    }
+
+    /* SECTION 1: FLASHCARDS */
+    .flashcard-container {
+      max-width: 650px;
+      margin: 0 auto;
+      perspective: 1000px;
+    }
+
+    .card-filter-bar {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .flashcard {
+      width: 100%;
+      min-height: 380px;
+      background: transparent;
+      border-radius: var(--radius);
+      cursor: pointer;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .flashcard.flipped {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: var(--radius);
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-lg);
+      padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-front {
+      align-items: center;
+      text-align: center;
+    }
+
+    .card-back {
+      transform: rotateY(180deg);
+      text-align: left;
+      overflow-y: auto;
+    }
+
+    .card-icon {
+      width: 70px;
+      height: 70px;
+      background: var(--primary-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .card-word {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.25rem;
+    }
+
+    .card-flip-hint {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 1.5rem;
+    }
+
+    .card-back-header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-vi-meaning {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .card-detail-group {
+      margin-bottom: 0.85rem;
+    }
+
+    .card-detail-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.15rem;
+    }
+
+    .card-detail-val {
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .card-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.5rem;
+      max-width: 650px;
+      margin: 1.5rem auto 0;
+      gap: 1rem;
+    }
+
+    .card-status-btns {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    /* SECTION 2: PRACTICE EXERCISES */
+    .exercise-subtabs {
+      display: flex;
+      gap: 0.5rem;
+      overflow-x: auto;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .subtab-btn {
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: white;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+
+    .subtab-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    .exercise-card {
+      background: white;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      margin-bottom: 1.5rem;
+    }
+
+    .exercise-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .exercise-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    /* MATCHING COLUMNS */
+    .matching-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .matching-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .matching-column {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .match-item {
+      padding: 0.85rem 1rem;
+      background: var(--bg);
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.2s;
+      user-select: none;
+    }
+
+    .match-item:hover {
+      border-color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .match-item.selected {
+      border-color: var(--primary);
+      background: var(--primary-light);
+      box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+    }
+
+    .match-item.matched {
+      border-color: var(--success);
+      background: var(--success-light);
+      color: #065f46;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .match-item.wrong {
+      border-color: var(--danger);
+      background: var(--danger-light);
+      animation: shake 0.3s;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-5px); }
+      40%, 80% { transform: translateX(5px); }
+    }
+
+    /* MULTIPLE CHOICE & QUESTION STYLES */
+    .question-block {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .question-block:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .question-text {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .options-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+
+    @media (max-width: 640px) {
+      .options-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .option-btn {
+      padding: 0.85rem 1rem;
+      background: var(--bg);
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      text-align: left;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .option-btn:hover {
+      border-color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .option-btn.selected {
+      border-color: var(--primary);
+      background: var(--primary-light);
+      font-weight: 600;
+    }
+
+    .option-btn.correct {
+      border-color: var(--success);
+      background: var(--success-light);
+      color: #065f46;
+      font-weight: 600;
+    }
+
+    .option-btn.incorrect {
+      border-color: var(--danger);
+      background: var(--danger-light);
+      color: #991b1b;
+    }
+
+    .feedback-box {
+      margin-top: 1rem;
+      padding: 0.85rem 1rem;
+      border-radius: var(--radius);
+      font-size: 0.9rem;
+      display: none;
+    }
+
+    .feedback-box.show {
+      display: block;
+    }
+
+    .feedback-correct {
+      background: var(--success-light);
+      border: 1px solid #a7f3d0;
+      color: #065f46;
+    }
+
+    .feedback-incorrect {
+      background: var(--danger-light);
+      border: 1px solid #fecaca;
+      color: #991b1b;
+    }
+
+    /* GAP FILL */
+    .word-bank {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      padding: 1rem;
+      background: var(--primary-light);
+      border-radius: var(--radius);
+      margin-bottom: 1.5rem;
+      border: 1px solid #dbeafe;
+    }
+
+    .word-chip {
+      padding: 0.35rem 0.75rem;
+      background: white;
+      border: 1px solid #93c5fd;
+      border-radius: 6px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--primary);
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .gap-input {
+      display: inline-block;
+      width: 140px;
+      padding: 0.3rem 0.5rem;
+      border: 2px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.95rem;
+      outline: none;
+      margin: 0 0.25rem;
+      text-align: center;
+      transition: border-color 0.2s;
+    }
+
+    .gap-input:focus {
+      border-color: var(--primary);
+    }
+
+    .gap-input.correct {
+      border-color: var(--success);
+      background: var(--success-light);
+      color: #065f46;
+      font-weight: 600;
+    }
+
+    .gap-input.incorrect {
+      border-color: var(--danger);
+      background: var(--danger-light);
+      color: #991b1b;
+    }
+
+    /* SECTION 3: VOCABULARY IN CONTEXT */
+    .reading-layout {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .reading-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .reading-passage {
+      background: white;
+      padding: 2rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    .passage-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .vocab-target {
+      background: #fef08a;
+      color: #854d0e;
+      padding: 0.1rem 0.35rem;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      border-bottom: 2px solid #ca8a04;
+    }
+
+    .vocab-target:hover {
+      background: #fde047;
+    }
+
+    .questions-column {
+      background: white;
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    /* MODAL POPUP FOR VOCAB LOOKUP */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(15, 23, 42, 0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      backdrop-filter: blur(2px);
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal-card {
+      background: white;
+      width: 90%;
+      max-width: 480px;
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      animation: popIn 0.25s ease-out;
+    }
+
+    @keyframes popIn {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: none;
+      font-size: 1.25rem;
+      cursor: pointer;
+      color: var(--text-muted);
+    }
+
+    /* SECTION 4: SENTENCE BUILDING */
+    .scramble-box {
+      background: var(--bg);
+      border: 2px dashed var(--border);
+      border-radius: var(--radius);
+      min-height: 60px;
+      padding: 0.75rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      align-items: center;
+    }
+
+    .scramble-chip {
+      padding: 0.4rem 0.8rem;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      user-select: none;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      transition: all 0.15s;
+    }
+
+    .scramble-chip:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .writing-area {
+      width: 100%;
+      min-height: 90px;
+      padding: 0.85rem;
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      outline: none;
+      margin-bottom: 0.75rem;
+      resize: vertical;
+    }
+
+    .writing-area:focus {
+      border-color: var(--primary);
+    }
+
+    .model-answer-box {
+      display: none;
+      background: var(--primary-light);
+      border: 1px solid #bfdbfe;
+      border-radius: var(--radius);
+      padding: 1rem;
+      margin-top: 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    /* SECTION 5: FINAL TEST */
+    .test-header-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      padding: 1rem 1.5rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      margin-bottom: 1.5rem;
+    }
+
+    .test-timer {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .results-summary {
+      background: white;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+      margin-bottom: 2rem;
+    }
+
+    .score-circle {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: var(--primary-light);
+      border: 6px solid var(--primary);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+    }
+
+    .score-num {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+    }
+
+    .score-total {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .mastery-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+      text-align: left;
+    }
+
+    @media (max-width: 640px) {
+      .mastery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .mastery-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+    }
+
+    .mastery-box h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .vocab-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .vocab-tag {
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .tag-mastered {
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    .tag-review {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    /* UTILITIES */
+    .hidden { display: none !important; }
+    .text-center { text-align: center; }
+    .mt-4 { margin-top: 1rem; }
+    .mb-4 { margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+
+  <!-- TOP HEADER -->
+  <header>
+    <div class="header-container">
+      <div class="logo-area">
+        <div class="logo-icon">IELTS</div>
+        <div class="logo-text">
+          <h1>Vocabulary Master</h1>
+          <p>Band 5.0 - 6.5+ | Architectural & Luxury Home Contexts</p>
+        </div>
+      </div>
+      <div class="global-progress">
+        <div class="progress-bar-wrap">
+          <div class="progress-bar-fill" id="global-progress-bar"></div>
+        </div>
+        <span class="progress-text" id="global-progress-text">0 / 21 Mastered</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION TABS -->
+  <nav>
+    <div class="nav-container">
+      <button class="nav-tab active" data-tab="tab-flashcards">
+        🎴 Flashcards
+      </button>
+      <button class="nav-tab" data-tab="tab-practice">
+        ✍️ Vocabulary Practice
+      </button>
+      <button class="nav-tab" data-tab="tab-context">
+        📖 Vocabulary in Context
+      </button>
+      <button class="nav-tab" data-tab="tab-building">
+        🧩 Sentence Building
+      </button>
+      <button class="nav-tab" data-tab="tab-test">
+        🏆 Final Test
+      </button>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTAINER -->
+  <main>
+
+    <!-- SECTION 1: FLASHCARDS -->
+    <section id="tab-flashcards" class="tab-section active">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Section 1: Vocabulary Flashcards</h2>
+          <p class="section-subtitle">Learn definitions, collocations, and natural example sentences for all 21 key words.</p>
+        </div>
+        <button class="btn btn-outline btn-sm" id="btn-shuffle-cards">🔀 Shuffle Deck</button>
+      </div>
+
+      <!-- FILTER BAR -->
+      <div class="card-filter-bar">
+        <button class="btn btn-sm btn-outline active-filter" data-filter="all" id="filter-all">All Cards (21)</button>
+        <button class="btn btn-sm btn-outline" data-filter="practice" id="filter-practice">Need Practice (0)</button>
+        <button class="btn btn-sm btn-outline" data-filter="know" id="filter-know">Know It (0)</button>
+      </div>
+
+      <!-- FLASHCARD DISPLAY -->
+      <div class="flashcard-container">
+        <div class="flashcard" id="flashcard">
+          <!-- FRONT -->
+          <div class="card-face card-front">
+            <div>
+              <span class="badge badge-pos" id="card-pos">noun</span>
+            </div>
+            <div>
+              <div class="card-icon" id="card-icon-wrap">
+                🏠
+              </div>
+              <h2 class="card-word" id="card-word">residence</h2>
+              <button class="btn btn-sm btn-outline mt-4" id="btn-speak" title="Listen to pronunciation">
+                🔊 Listen
+              </button>
+            </div>
+            <div class="card-flip-hint">
+              🔄 Click anywhere on card to flip
+            </div>
+          </div>
+
+          <!-- BACK -->
+          <div class="card-face card-back">
+            <div class="card-back-header">
+              <span class="badge badge-pos" id="card-pos-back">noun</span>
+              <span class="card-vi-meaning" id="card-vi">Nơi cư trú, dinh thự</span>
+            </div>
+
+            <div class="card-detail-group">
+              <div class="card-detail-label">English Definition (B1 Level)</div>
+              <div class="card-detail-val" id="card-def">A large, impressive house where someone lives.</div>
+            </div>
+
+            <div class="card-detail-group">
+              <div class="card-detail-label">Contextual Example</div>
+              <div class="card-detail-val" style="font-style: italic;" id="card-example">"The billionaire's primary residence is located on a private island."</div>
+            </div>
+
+            <div class="card-detail-group">
+              <div class="card-detail-label">Synonyms</div>
+              <div class="card-detail-val" id="card-synonyms">home, dwelling, estate</div>
+            </div>
+
+            <div class="card-detail-group">
+              <div class="card-detail-label">Useful Collocation</div>
+              <div class="card-detail-val" style="color: var(--primary); font-weight: 600;" id="card-collocation">private residence, official residence</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTROLS & MARKING -->
+      <div class="card-status-btns">
+        <button class="btn btn-warning" id="btn-mark-practice">⚠️ Need Practice</button>
+        <button class="btn btn-success" id="btn-mark-know">✅ Know It</button>
+      </div>
+
+      <div class="card-controls">
+        <button class="btn btn-outline" id="btn-prev-card">← Previous</button>
+        <span style="font-weight: 600; color: var(--text-muted);" id="card-counter">1 / 21</span>
+        <button class="btn btn-outline" id="btn-next-card">Next →</button>
+      </div>
+    </section>
+
+    <!-- SECTION 2: PRACTICE EXERCISES -->
+    <section id="tab-practice" class="tab-section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Section 2: Vocabulary Practice</h2>
+          <p class="section-subtitle">Reinforce your memory through 6 interactive exercise types.</p>
+        </div>
+      </div>
+
+      <!-- SUB-EXERCISE NAVIGATION -->
+      <div class="exercise-subtabs">
+        <button class="subtab-btn active" data-subtab="ex-1">Ex 1: Def Matching</button>
+        <button class="subtab-btn" data-subtab="ex-2">Ex 2: Vietnamese Matching</button>
+        <button class="subtab-btn" data-subtab="ex-3">Ex 3: Multiple Choice</button>
+        <button class="subtab-btn" data-subtab="ex-4">Ex 4: Contextual Gap-Fill</button>
+        <button class="subtab-btn" data-subtab="ex-5">Ex 5: Collocation Matching</button>
+        <button class="subtab-btn" data-subtab="ex-6">Ex 6: Error Correction</button>
+      </div>
+
+      <!-- EX 1: MATCH WORDS WITH DEFINITIONS -->
+      <div id="ex-1" class="exercise-card subtab-content">
+        <div class="exercise-title">
+          <span>🎯 Exercise 1: Match Words with B1 Definitions</span>
+        </div>
+        <p class="exercise-desc">Click an English word on the left, then click its corresponding definition on the right.</p>
+
+        <div class="matching-grid" id="ex1-matching-container">
+          <div class="matching-column" id="ex1-col-words"></div>
+          <div class="matching-column" id="ex1-col-defs"></div>
+        </div>
+        <div class="text-center mt-4">
+          <button class="btn btn-outline" id="ex1-reset-btn">🔄 Reset Exercise</button>
+        </div>
+      </div>
+
+      <!-- EX 2: MATCH WORDS WITH VIETNAMESE MEANINGS -->
+      <div id="ex-2" class="exercise-card subtab-content hidden">
+        <div class="exercise-title">
+          <span>🇻🇳 Exercise 2: Match Words with Vietnamese Meanings</span>
+        </div>
+        <p class="exercise-desc">Select an English word and match it to its accurate Vietnamese translation.</p>
+
+        <div class="matching-grid" id="ex2-matching-container">
+          <div class="matching-column" id="ex2-col-words"></div>
+          <div class="matching-column" id="ex2-col-meanings"></div>
+        </div>
+        <div class="text-center mt-4">
+          <button class="btn btn-outline" id="ex2-reset-btn">🔄 Reset Exercise</button>
+        </div>
+      </div>
+
+      <!-- EX 3: MULTIPLE CHOICE QUESTIONS -->
+      <div id="ex-3" class="exercise-card subtab-content hidden">
+        <div class="exercise-title">
+          <span>📝 Exercise 3: Contextual Multiple-Choice Questions</span>
+        </div>
+        <p class="exercise-desc">Choose the most contextually appropriate target word to complete each sentence.</p>
+
+        <div id="ex3-questions-container"></div>
+      </div>
+
+      <!-- EX 4: CONTEXTUAL GAP-FILL -->
+      <div id="ex-4" class="exercise-card subtab-content hidden">
+        <div class="exercise-title">
+          <span>✍️ Exercise 4: Contextual Gap-Fill</span>
+        </div>
+        <p class="exercise-desc">Fill in the blanks with target words. Toggle word bank for support.</p>
+
+        <div style="margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center;">
+          <button class="btn btn-sm btn-outline" id="toggle-word-bank-btn">Hide Word Bank</button>
+          <span style="font-size: 0.85rem; color: var(--text-muted);">Case-insensitive spelling check</span>
+        </div>
+
+        <div class="word-bank" id="gap-word-bank"></div>
+
+        <div id="ex4-questions-container"></div>
+
+        <div class="text-center mt-4">
+          <button class="btn btn-primary" id="ex4-check-btn">Check Answers</button>
+        </div>
+      </div>
+
+      <!-- EX 5: COLLOCATION MATCHING -->
+      <div id="ex-5" class="exercise-card subtab-content hidden">
+        <div class="exercise-title">
+          <span>🔗 Exercise 5: Collocation Matching</span>
+        </div>
+        <p class="exercise-desc">Match the beginning of each expression with its natural ending.</p>
+
+        <div class="matching-grid" id="ex5-matching-container">
+          <div class="matching-column" id="ex5-col-beginnings"></div>
+          <div class="matching-column" id="ex5-col-endings"></div>
+        </div>
+        <div class="text-center mt-4">
+          <button class="btn btn-outline" id="ex5-reset-btn">🔄 Reset Exercise</button>
+        </div>
+      </div>
+
+      <!-- EX 6: ERROR CORRECTION -->
+      <div id="ex-6" class="exercise-card subtab-content hidden">
+        <div class="exercise-title">
+          <span>🔍 Exercise 6: Vocabulary Error Correction</span>
+        </div>
+        <p class="exercise-desc">Identify incorrect vocabulary usage and select the proper correction.</p>
+
+        <div id="ex6-questions-container"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: VOCABULARY IN CONTEXT -->
+    <section id="tab-context" class="tab-section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Section 3: Vocabulary in Context</h2>
+          <p class="section-subtitle">Read B1+ authentic IELTS passages and answer comprehension questions. Click highlighted words to inspect definitions.</p>
+        </div>
+      </div>
+
+      <div class="reading-layout">
+        <!-- LEFT: PASSAGE DISPLAY -->
+        <div>
+          <!-- PASSAGE 1 -->
+          <div class="reading-passage mb-4" id="passage-1-box">
+            <h3 class="passage-title">Passage 1: Antilia — A Billion-Dollar Private Residence</h3>
+            <p>
+              Located in Mumbai, Antilia is widely regarded as the most expensive private <span class="vocab-target" data-word="residence">residence</span> in the world. Owned by a wealthy businessman, the <span class="vocab-target" data-word="extravagant">extravagant</span> <span class="vocab-target" data-word="property">property</span> is estimated to <span class="vocab-target" data-word="cost more than one billion dollars">cost more than one billion dollars</span>. The building features a unique <span class="vocab-target" data-word="multi-storey">multi-storey</span> design with 27 floors. Its stunning <span class="vocab-target" data-word="interior">interior</span> is made from <span class="vocab-target" data-word="rare">rare</span> materials, including polished white <span class="vocab-target" data-word="marble">marble</span> and custom glass panels.
+            </p>
+            <br>
+            <p>
+              The house is equipped with extraordinary <span class="vocab-target" data-word="facility">facilities</span>. An underground <span class="vocab-target" data-word="garage">garage</span> has <span class="vocab-target" data-word="have space for">space for</span> 168 luxury vehicles, while a rooftop <span class="vocab-target" data-word="helipad">helipad</span> allows helicopters to <span class="vocab-target" data-word="take off and land">take off and land</span> safely. High up in the building, massive <span class="vocab-target" data-word="floor-to-ceiling windows">floor-to-ceiling windows</span> <span class="vocab-target" data-word="offer spectacular views of">offer spectacular views of</span> the Arabian Sea, making this skyscraper a true marvel of modern engineering.
+            </p>
+          </div>
+
+          <!-- PASSAGE 2 -->
+          <div class="reading-passage" id="passage-2-box">
+            <h3 class="passage-title">Passage 2: Modern Architectural Trends in Luxury Homes</h3>
+            <p>
+              In contemporary <span class="vocab-target" data-word="architecture">architecture</span>, grand mansions are <span class="vocab-target" data-word="be designed to entertain guests">designed to entertain guests</span> on a lavish scale. Upon entering, visitors walk into a <span class="vocab-target" data-word="vast">vast</span> <span class="vocab-target" data-word="lobby">lobby</span> and a grand <span class="vocab-target" data-word="reception area">reception area</span> that is <span class="vocab-target" data-word="be filled with">filled with</span> natural light. Architects often install expansive glass roofs to bring in <span class="vocab-target" data-word="as much sunlight as possible">as much sunlight as possible</span>.
+            </p>
+            <br>
+            <p>
+              Entertainment spaces frequently feature a magnificent <span class="vocab-target" data-word="ballroom">ballroom</span> with a crystal <span class="vocab-target" data-word="chandelier">chandelier</span>, alongside a quiet private <span class="vocab-target" data-word="prayer room">prayer room</span> for contemplation. The upper levels house the private <span class="vocab-target" data-word="living quarters">living quarters</span>. However, some critics often <span class="vocab-target" data-word="criticise the architecture">criticise the architecture</span> for being overly complex or structurally <span class="vocab-target" data-word="unstable">unstable</span> if built on steep hills.
+            </p>
+          </div>
+        </div>
+
+        <!-- RIGHT: COMPREHENSION QUESTIONS -->
+        <div class="questions-column">
+          <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 1rem;">Reading Comprehension Questions</h3>
+          <div id="reading-questions-container"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: SENTENCE BUILDING -->
+    <section id="tab-building" class="tab-section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Section 4: Sentence Building & Production</h2>
+          <p class="section-subtitle">Move from vocabulary recognition to active production through scrambling and guided writing.</p>
+        </div>
+      </div>
+
+      <!-- TASK 1: SENTENCE REARRANGEMENT -->
+      <div class="exercise-card">
+        <h3 class="exercise-title">🧩 Task 1: Sentence Rearrangement</h3>
+        <p class="exercise-desc">Click the scrambled word chips in the correct order to construct a natural sentence.</p>
+
+        <div id="scramble-exercises-container"></div>
+      </div>
+
+      <!-- TASK 2: GUIDED ORIGINAL WRITING -->
+      <div class="exercise-card">
+        <h3 class="exercise-title">✍️ Task 2: Guided Original Writing Practice</h3>
+        <p class="exercise-desc">Write your own sentence using the target word according to the prompt. Click "Reveal Model Answer" to compare.</p>
+
+        <div id="writing-prompts-container"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: FINAL VOCABULARY TEST -->
+    <section id="tab-test" class="tab-section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Section 5: Final Comprehensive Vocabulary Test</h2>
+          <p class="section-subtitle">Evaluate your mastery across 20 randomized questions covering all target words and expressions.</p>
+        </div>
+      </div>
+
+      <div class="test-header-bar">
+        <div>
+          <span style="font-weight: 700; font-size: 1.1rem;">IELTS Band 5.0 - 6.5 Evaluation</span>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">20 Mixed Questions</p>
+        </div>
+        <div class="test-timer" id="test-timer-display">
+          ⏱️ <span id="test-timer-clock">00:00</span>
+        </div>
+      </div>
+
+      <!-- TEST CONTENT AREA -->
+      <div id="test-questions-wrapper">
+        <div id="test-questions-container"></div>
+
+        <div class="text-center mt-4">
+          <button class="btn btn-primary btn-lg" id="btn-submit-test" style="padding: 0.8rem 2rem; font-size: 1.1rem;">
+            🏆 Submit Final Test
+          </button>
+        </div>
+      </div>
+
+      <!-- TEST RESULTS SUMMARY (HIDDEN INITIALLY) -->
+      <div id="test-results-container" class="hidden">
+        <div class="results-summary">
+          <div class="score-circle">
+            <div class="score-num" id="results-score-num">18</div>
+            <div class="score-total">out of 20</div>
+          </div>
+          <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;" id="results-title">Great Achievement!</h3>
+          <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto 1.5rem;" id="results-feedback">
+            You demonstrate strong command of architectural and descriptive vocabulary required for IELTS Reading.
+          </p>
+
+          <button class="btn btn-outline" id="btn-retry-test">🔄 Retake Test</button>
+
+          <!-- MASTERY CLASSIFICATION -->
+          <div class="mastery-grid">
+            <div class="mastery-box">
+              <h4>✅ Mastered Vocabulary (<span id="count-mastered">0</span>)</h4>
+              <div class="vocab-tags" id="mastered-tags-container"></div>
+            </div>
+            <div class="mastery-box">
+              <h4>⚠️ Needs Further Review (<span id="count-review">0</span>)</h4>
+              <div class="vocab-tags" id="review-tags-container"></div>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem;">Detailed Answer Review</h3>
+        <div id="test-review-details-container"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- VOCABULARY MODAL POPUP -->
+  <div class="modal-overlay" id="vocab-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <div style="margin-bottom: 0.5rem;">
+        <span class="badge badge-pos" id="modal-pos">noun</span>
+      </div>
+      <h3 style="font-size: 1.6rem; font-weight: 700; color: var(--primary); margin-bottom: 0.25rem;" id="modal-word">residence</h3>
+      <p style="font-size: 1.1rem; font-weight: 600; color: var(--text); margin-bottom: 1rem;" id="modal-vi">Nơi cư trú, dinh thự</p>
+
+      <div class="card-detail-group">
+        <div class="card-detail-label">Definition</div>
+        <div class="card-detail-val" id="modal-def">A large, impressive house where someone lives.</div>
+      </div>
+
+      <div class="card-detail-group">
+        <div class="card-detail-label">Example</div>
+        <div class="card-detail-val" style="font-style: italic;" id="modal-example">"The billionaire's primary residence is located on a private island."</div>
+      </div>
+
+      <div class="card-detail-group">
+        <div class="card-detail-label">Collocation / Usage</div>
+        <div class="card-detail-val" style="color: var(--primary); font-weight: 600;" id="modal-collocation">private residence</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* ==========================================================================
+       DATA DEFINITIONS (21 WORDS & 11 COLLOCATIONS)
+       ========================================================================== */
+
+    const VOCABULARY_DATA = [
+      {
+        id: "residence",
+        word: "residence",
+        pos: "noun",
+        vi: "Nơi cư trú, dinh thự",
+        def: "A large, impressive house where someone lives.",
+        example: "The billionaire's primary residence is located on a private island.",
+        synonyms: "home, dwelling, estate",
+        collocation: "private residence, official residence",
+        icon: "🏠"
+      },
+      {
+        id: "property",
+        word: "property",
+        pos: "noun",
+        vi: "Bất động sản, khu nhà",
+        def: "A building and the land belonging to it.",
+        example: "She bought a valuable property in the center of London.",
+        synonyms: "estate, real estate, land",
+        collocation: "luxury property, commercial property",
+        icon: "🏢"
+      },
+      {
+        id: "extravagant",
+        word: "extravagant",
+        pos: "adjective",
+        vi: "Xa hoa, phung phí",
+        def: "Costing too much money or spending more than is necessary.",
+        example: "The house features an extravagant design with gold-plated doors.",
+        synonyms: "luxurious, lavish, wasteful",
+        collocation: "extravagant lifestyle, extravagant design",
+        icon: "💎"
+      },
+      {
+        id: "interior",
+        word: "interior",
+        pos: "noun",
+        vi: "Nội thất, phần bên trong",
+        def: "The inside part of a building or room.",
+        example: "The interior of the palace was decorated with rare paintings.",
+        synonyms: "inside, indoor space",
+        collocation: "interior design, interior decoration",
+        icon: "🛋️"
+      },
+      {
+        id: "marble",
+        word: "marble",
+        pos: "noun",
+        vi: "Đá cẩm thạch",
+        def: "A hard, smooth stone used in building and sculpture.",
+        example: "The bathroom floors are made of expensive white marble.",
+        synonyms: "polished stone",
+        collocation: "marble floor, marble column",
+        icon: "🏛️"
+      },
+      {
+        id: "rare",
+        word: "rare",
+        pos: "adjective",
+        vi: "Hiếm, quý hiếm",
+        def: "Not common; hard to find or see.",
+        example: "The villa is decorated with rare woods imported from South America.",
+        synonyms: "uncommon, unusual, scarce",
+        collocation: "rare materials, rare items",
+        icon: "⭐"
+      },
+      {
+        id: "spectacular",
+        word: "spectacular",
+        pos: "adjective",
+        vi: "Ngoạn mục, tuyệt đẹp",
+        def: "Very impressive, exciting, or beautiful to look at.",
+        example: "The penthouse offers a spectacular view of the entire city.",
+        synonyms: "breathtaking, amazing, stunning",
+        collocation: "spectacular view, spectacular scenery",
+        icon: "🌅"
+      },
+      {
+        id: "multi-storey",
+        word: "multi-storey",
+        pos: "adjective",
+        vi: "Có nhiều tầng",
+        def: "Having several levels or floors.",
+        example: "The family built a multi-storey mansion with six floors.",
+        synonyms: "multi-level, high-rise",
+        collocation: "multi-storey building, multi-storey garage",
+        icon: "🏢"
+      },
+      {
+        id: "garage",
+        word: "garage",
+        pos: "noun",
+        vi: "Nhà để xe",
+        def: "A building or shed for keeping motor vehicles.",
+        example: "The underground garage has space for up to twenty cars.",
+        synonyms: "carport, parking space",
+        collocation: "underground garage, multi-storey garage",
+        icon: "🚗"
+      },
+      {
+        id: "helipad",
+        word: "helipad",
+        pos: "noun",
+        vi: "Bãi đáp trực thăng",
+        def: "A landing area for helicopters, often on top of a building.",
+        example: "The skyscraper has a helipad on the roof for quick travel.",
+        synonyms: "helicopter landing pad",
+        collocation: "rooftop helipad",
+        icon: "🚁"
+      },
+      {
+        id: "lobby",
+        word: "lobby",
+        pos: "noun",
+        vi: "Sảnh chính",
+        def: "A large entrance hall inside a public building or hotel.",
+        example: "Guests wait in the spacious lobby before checking into their rooms.",
+        synonyms: "entrance hall, foyer",
+        collocation: "hotel lobby, spacious lobby",
+        icon: "🏨"
+      },
+      {
+        id: "reception area",
+        word: "reception area",
+        pos: "noun phrase",
+        vi: "Khu vực tiếp khách",
+        def: "A place in a building where visitors are greeted when they arrive.",
+        example: "The reception area has comfortable seats and friendly staff.",
+        synonyms: "welcome desk, front desk area",
+        collocation: "modern reception area",
+        icon: "🛎️"
+      },
+      {
+        id: "vast",
+        word: "vast",
+        pos: "adjective",
+        vi: "Rộng lớn, bao la",
+        def: "Extremely large in area, size, or amount.",
+        example: "The estate includes a vast garden with thousands of trees.",
+        synonyms: "huge, enormous, immense",
+        collocation: "vast area, vast garden",
+        icon: "🌳"
+      },
+      {
+        id: "facility",
+        word: "facility",
+        pos: "noun",
+        vi: "Cơ sở vật chất, tiện nghi",
+        def: "A building, service, or piece of equipment provided for a purpose.",
+        example: "The residential complex offers modern sports facilities like a gym and pool.",
+        synonyms: "amenity, feature, service",
+        collocation: "modern facilities, sports facility",
+        icon: "🏊"
+      },
+      {
+        id: "prayer room",
+        word: "prayer room",
+        pos: "noun phrase",
+        vi: "Phòng cầu nguyện",
+        def: "A room set aside for religious quiet time and prayer.",
+        example: "The residence includes a quiet prayer room for family members.",
+        synonyms: "quiet room, place of worship",
+        collocation: "private prayer room",
+        icon: "🕯️"
+      },
+      {
+        id: "ballroom",
+        word: "ballroom",
+        pos: "noun",
+        vi: "Phòng khiêu vũ",
+        def: "A large room designed for formal dancing and large parties.",
+        example: "Hundreds of guests gathered in the grand ballroom for the celebration.",
+        synonyms: "dance hall, party hall",
+        collocation: "grand ballroom",
+        icon: "💃"
+      },
+      {
+        id: "chandelier",
+        word: "chandelier",
+        pos: "noun",
+        vi: "Đèn chùm",
+        def: "A large, decorative light hanging from the ceiling.",
+        example: "A crystal chandelier hung in the center of the dining room.",
+        synonyms: "ceiling light, hanging light",
+        collocation: "crystal chandelier",
+        icon: "💡"
+      },
+      {
+        id: "living quarters",
+        word: "living quarters",
+        pos: "noun phrase",
+        vi: "Khu vực sinh hoạt",
+        def: "The rooms where people live, sleep, and rest in a building.",
+        example: "The top three floors serve as private living quarters for the owner.",
+        synonyms: "living area, private accommodation",
+        collocation: "private living quarters",
+        icon: "🛏️"
+      },
+      {
+        id: "criticise",
+        word: "criticise",
+        pos: "verb",
+        vi: "Chỉ trích, phê bình",
+        def: "To express disapproval of someone or something; point out faults.",
+        example: "Many people criticise the extravagant design for wasting money.",
+        synonyms: "find fault with, disapprove of",
+        collocation: "criticise the architecture, strongly criticise",
+        icon: "🗣️"
+      },
+      {
+        id: "architecture",
+        word: "architecture",
+        pos: "noun",
+        vi: "Kiến trúc",
+        def: "The art or practice of designing and constructing buildings.",
+        example: "Modern architecture often focuses on natural light and glass.",
+        synonyms: "building design, construction style",
+        collocation: "modern architecture, traditional architecture",
+        icon: "📐"
+      },
+      {
+        id: "unstable",
+        word: "unstable",
+        pos: "adjective",
+        vi: "Không vững chắc, dễ mất ổn định",
+        def: "Likely to change, fail, fall, or collapse; not firm.",
+        example: "Older buildings can become unstable if they are not maintained.",
+        synonyms: "shaky, unsteady, insecure",
+        collocation: "unstable structure, financially unstable",
+        icon: "⚠️"
+      }
+    ];
+
+    const COLLOCATIONS_DATA = [
+      { id: "c1", beginning: "cost more than", ending: "one billion dollars", full: "cost more than one billion dollars", vi: "Có giá hơn một tỷ đô la" },
+      { id: "c2", beginning: "be made from", ending: "different materials", full: "be made from different materials", vi: "Được làm từ những vật liệu khác nhau" },
+      { id: "c3", beginning: "design", ending: "features", full: "design features", vi: "Các đặc điểm thiết kế" },
+      { id: "c4", beginning: "floor-to-ceiling", ending: "windows", full: "floor-to-ceiling windows", vi: "Cửa sổ kéo dài từ sàn đến trần" },
+      { id: "c5", beginning: "offer spectacular", ending: "views of", full: "offer spectacular views of", vi: "Mang đến tầm nhìn tuyệt đẹp ra" },
+      { id: "c6", beginning: "have space", ending: "for", full: "have space for", vi: "Có không gian dành cho" },
+      { id: "c7", beginning: "take off", ending: "and land", full: "take off and land", vi: "Cất cánh và hạ cánh" },
+      { id: "c8", beginning: "be designed to", ending: "entertain guests", full: "be designed to entertain guests", vi: "Được thiết kế để tiếp đón khách" },
+      { id: "c9", beginning: "be filled", ending: "with", full: "be filled with", vi: "Được lấp đầy bởi" },
+      { id: "c10", beginning: "as much sunlight", ending: "as possible", full: "as much sunlight as possible", vi: "Nhiều ánh sáng mặt trời nhất có thể" },
+      { id: "c11", beginning: "criticise", ending: "the architecture", full: "criticise the architecture", vi: "Chỉ trích kiến trúc" }
+    ];
+
+    /* ==========================================================================
+       APP STATE MANAGEMENT
+       ========================================================================== */
+    const state = {
+      cardIndex: 0,
+      cardsDeck: [...VOCABULARY_DATA],
+      cardStatuses: {}, // { residence: 'know' | 'practice' }
+      activeFilter: 'all',
+      isFlipped: false,
+      testAnswers: {},
+      testSubmitted: false,
+      testStartTime: null,
+      testTimerInterval: null
+    };
+
+    // Initialize state from LocalStorage if available
+    try {
+      const savedStatuses = localStorage.getItem('ielts_vocab_statuses');
+      if (savedStatuses) state.cardStatuses = JSON.parse(savedStatuses);
+    } catch(e) {}
+
+    /* ==========================================================================
+       CORE FUNCTIONS & NAVIGATION
+       ========================================================================== */
+    document.addEventListener('DOMContentLoaded', () => {
+      initNavigation();
+      initFlashcards();
+      initPracticeExercises();
+      initReadingContext();
+      initSentenceBuilding();
+      initFinalTest();
+      updateGlobalProgress();
+    });
+
+    function initNavigation() {
+      const tabs = document.querySelectorAll('.nav-tab');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          const targetSectionId = tab.dataset.tab;
+
+          document.querySelectorAll('.tab-section').forEach(section => {
+            section.classList.remove('active');
+          });
+          document.getElementById(targetSectionId).classList.add('active');
+        });
+      });
+    }
+
+    function updateGlobalProgress() {
+      const total = VOCABULARY_DATA.length;
+      const masteredCount = Object.values(state.cardStatuses).filter(s => s === 'know').length;
+      const percent = Math.round((masteredCount / total) * 100);
+
+      document.getElementById('global-progress-bar').style.width = `${percent}%`;
+      document.getElementById('global-progress-text').textContent = `${masteredCount} / ${total} Mastered`;
+
+      // Save to localStorage
+      try {
+        localStorage.setItem('ielts_vocab_statuses', JSON.stringify(state.cardStatuses));
+      } catch(e) {}
+    }
+
+    /* ==========================================================================
+       SECTION 1: FLASHCARDS LOGIC
+       ========================================================================== */
+    function initFlashcards() {
+      const card = document.getElementById('flashcard');
+      const prevBtn = document.getElementById('btn-prev-card');
+      const nextBtn = document.getElementById('btn-next-card');
+      const shuffleBtn = document.getElementById('btn-shuffle-cards');
+      const speakBtn = document.getElementById('btn-speak');
+      const markKnowBtn = document.getElementById('btn-mark-know');
+      const markPracticeBtn = document.getElementById('btn-mark-practice');
+
+      // Card flip
+      card.addEventListener('click', (e) => {
+        // Prevent flipping when clicking audio button
+        if (e.target.closest('#btn-speak')) return;
+        card.classList.toggle('flipped');
+        state.isFlipped = card.classList.contains('flipped');
+      });
+
+      // Navigation
+      prevBtn.addEventListener('click', () => changeCard(-1));
+      nextBtn.addEventListener('click', () => changeCard(1));
+
+      // Shuffle
+      shuffleBtn.addEventListener('click', () => {
+        state.cardsDeck.sort(() => Math.random() - 0.5);
+        state.cardIndex = 0;
+        renderCurrentCard();
+      });
+
+      // Pronunciation Audio (Web Speech API)
+      speakBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const word = state.cardsDeck[state.cardIndex].word;
+        if ('speechSynthesis' in window) {
+          const utterance = new SpeechSynthesisUtterance(word);
+          utterance.lang = 'en-US';
+          window.speechSynthesis.speak(utterance);
+        }
+      });
+
+      // Filter Buttons
+      document.querySelectorAll('.card-filter-bar button').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.card-filter-bar button').forEach(b => b.classList.remove('btn-primary'));
+          btn.classList.add('btn-primary');
+          filterCards(btn.dataset.filter);
+        });
+      });
+
+      // Mark status buttons
+      markKnowBtn.addEventListener('click', () => {
+        const currentWordId = state.cardsDeck[state.cardIndex].id;
+        state.cardStatuses[currentWordId] = 'know';
+        updateGlobalProgress();
+        updateFilterCounts();
+        changeCard(1);
+      });
+
+      markPracticeBtn.addEventListener('click', () => {
+        const currentWordId = state.cardsDeck[state.cardIndex].id;
+        state.cardStatuses[currentWordId] = 'practice';
+        updateGlobalProgress();
+        updateFilterCounts();
+        changeCard(1);
+      });
+
+      updateFilterCounts();
+      renderCurrentCard();
+    }
+
+    function filterCards(filterType) {
+      state.activeFilter = filterType;
+      if (filterType === 'all') {
+        state.cardsDeck = [...VOCABULARY_DATA];
+      } else if (filterType === 'know') {
+        state.cardsDeck = VOCABULARY_DATA.filter(item => state.cardStatuses[item.id] === 'know');
+      } else if (filterType === 'practice') {
+        state.cardsDeck = VOCABULARY_DATA.filter(item => state.cardStatuses[item.id] === 'practice');
+      }
+
+      if (state.cardsDeck.length === 0) {
+        state.cardsDeck = [{
+          id: "none",
+          word: "No cards",
+          pos: "notice",
+          vi: "Không có từ vựng",
+          def: "No cards match this filter right now.",
+          example: "Please select 'All Cards' to reset your filter.",
+          synonyms: "N/A",
+          collocation: "N/A",
+          icon: "🔍"
+        }];
+      }
+
+      state.cardIndex = 0;
+      renderCurrentCard();
+    }
+
+    function updateFilterCounts() {
+      const total = VOCABULARY_DATA.length;
+      const knowCount = Object.values(state.cardStatuses).filter(s => s === 'know').length;
+      const practiceCount = Object.values(state.cardStatuses).filter(s => s === 'practice').length;
+
+      document.getElementById('filter-all').textContent = `All Cards (${total})`;
+      document.getElementById('filter-know').textContent = `Know It (${knowCount})`;
+      document.getElementById('filter-practice').textContent = `Need Practice (${practiceCount})`;
+    }
+
+    function changeCard(direction) {
+      const card = document.getElementById('flashcard');
+      if (card.classList.contains('flipped')) {
+        card.classList.remove('flipped');
+        setTimeout(() => {
+          state.cardIndex = (state.cardIndex + direction + state.cardsDeck.length) % state.cardsDeck.length;
+          renderCurrentCard();
+        }, 250);
+      } else {
+        state.cardIndex = (state.cardIndex + direction + state.cardsDeck.length) % state.cardsDeck.length;
+        renderCurrentCard();
+      }
+    }
+
+    function renderCurrentCard() {
+      const item = state.cardsDeck[state.cardIndex];
+      document.getElementById('card-pos').textContent = item.pos;
+      document.getElementById('card-word').textContent = item.word;
+      document.getElementById('card-icon-wrap').textContent = item.icon;
+
+      document.getElementById('card-pos-back').textContent = item.pos;
+      document.getElementById('card-vi').textContent = item.vi;
+      document.getElementById('card-def').textContent = item.def;
+      document.getElementById('card-example').textContent = `"${item.example}"`;
+      document.getElementById('card-synonyms').textContent = item.synonyms;
+      document.getElementById('card-collocation').textContent = item.collocation;
+
+      document.getElementById('card-counter').textContent = `${state.cardIndex + 1} / ${state.cardsDeck.length}`;
+    }
+
+    /* ==========================================================================
+       SECTION 2: PRACTICE EXERCISES LOGIC
+       ========================================================================== */
+    function initPracticeExercises() {
+      // Subtab switching
+      const subtabs = document.querySelectorAll('.subtab-btn');
+      subtabs.forEach(btn => {
+        btn.addEventListener('click', () => {
+          subtabs.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          document.querySelectorAll('.subtab-content').forEach(c => c.classList.add('hidden'));
+          document.getElementById(btn.dataset.subtab).classList.remove('hidden');
+        });
+      });
+
+      renderEx1Matching();
+      renderEx2VietnameseMatching();
+      renderEx3MultipleChoice();
+      renderEx4GapFill();
+      renderEx5CollocationMatching();
+      renderEx6ErrorCorrection();
+    }
+
+    /* EX 1: MATCH DEFINITIONS */
+    function renderEx1Matching() {
+      const items = VOCABULARY_DATA.slice(0, 8); // Select 8 words for round 1
+      const wordsCol = document.getElementById('ex1-col-words');
+      const defsCol = document.getElementById('ex1-col-defs');
+
+      let selectedWord = null;
+      let selectedDef = null;
+
+      const words = [...items].sort(() => Math.random() - 0.5);
+      const defs = [...items].sort(() => Math.random() - 0.5);
+
+      wordsCol.innerHTML = words.map(w => `<div class="match-item" data-word="${w.id}">${w.word}</div>`).join('');
+      defsCol.innerHTML = defs.map(d => `<div class="match-item" data-def="${d.id}">${d.def}</div>`).join('');
+
+      const checkPair = () => {
+        if (selectedWord && selectedDef) {
+          const wId = selectedWord.dataset.word;
+          const dId = selectedDef.dataset.def;
+
+          if (wId === dId) {
+            selectedWord.classList.remove('selected');
+            selectedDef.classList.remove('selected');
+            selectedWord.classList.add('matched');
+            selectedDef.classList.add('matched');
+            selectedWord = null;
+            selectedDef = null;
+          } else {
+            selectedWord.classList.add('wrong');
+            selectedDef.classList.add('wrong');
+            setTimeout(() => {
+              if (selectedWord) selectedWord.classList.remove('wrong', 'selected');
+              if (selectedDef) selectedDef.classList.remove('wrong', 'selected');
+              selectedWord = null;
+              selectedDef = null;
+            }, 600);
+          }
+        }
+      };
+
+      wordsCol.querySelectorAll('.match-item').forEach(el => {
+        el.addEventListener('click', () => {
+          if (el.classList.contains('matched')) return;
+          wordsCol.querySelectorAll('.match-item').forEach(i => i.classList.remove('selected'));
+          el.classList.add('selected');
+          selectedWord = el;
+          checkPair();
+        });
+      });
+
+      defsCol.querySelectorAll('.match-item').forEach(el => {
+        el.addEventListener('click', () => {
+          if (el.classList.contains('matched')) return;
+          defsCol.querySelectorAll('.match-item').forEach(i => i.classList.remove('selected'));
+          el.classList.add('selected');
+          selectedDef = el;
+          checkPair();
+        });
+      });
+
+      document.getElementById('ex1-reset-btn').onclick = renderEx1Matching;
+    }
+
+    /* EX 2: MATCH VIETNAMESE MEANINGS */
+    function renderEx2VietnameseMatching() {
+      const items = VOCABULARY_DATA.slice(8, 16);
+      const wordsCol = document.getElementById('ex2-col-words');
+      const meaningsCol = document.getElementById('ex2-col-meanings');
+
+      let selectedWord = null;
+      let selectedMeaning = null;
+
+      const words = [...items].sort(() => Math.random() - 0.5);
+      const meanings = [...items].sort(() => Math.random() - 0.5);
+
+      wordsCol.innerHTML = words.map(w => `<div class="match-item" data-word="${w.id}">${w.word}</div>`).join('');
+      meaningsCol.innerHTML = meanings.map(m => `<div class="match-item" data-meaning="${m.id}">${m.vi}</div>`).join('');
+
+      const checkPair = () => {
+        if (selectedWord && selectedMeaning) {
+          if (selectedWord.dataset.word === selectedMeaning.dataset.meaning) {
+            selectedWord.classList.add('matched');
+            selectedMeaning.classList.add('matched');
+            selectedWord = null;
+            selectedMeaning = null;
+          } else {
+            selectedWord.classList.add('wrong');
+            selectedMeaning.classList.add('wrong');
+            setTimeout(() => {
+              if (selectedWord) selectedWord.classList.remove('wrong', 'selected');
+              if (selectedMeaning) selectedMeaning.classList.remove('wrong', 'selected');
+              selectedWord = null;
+              selectedMeaning = null;
+            }, 600);
+          }
+        }
+      };
+
+      wordsCol.querySelectorAll('.match-item').forEach(el => {
+        el.addEventListener('click', () => {
+          wordsCol.querySelectorAll('.match-item').forEach(i => i.classList.remove('selected'));
+          el.classList.add('selected');
+          selectedWord = el;
+          checkPair();
+        });
+      });
+
+      meaningsCol.querySelectorAll('.match-item').forEach(el => {
+        el.addEventListener('click', () => {
+          meaningsCol.querySelectorAll('.match-item').forEach(i => i.classList.remove('selected'));
+          el.classList.add('selected');
+          selectedMeaning = el;
+          checkPair();
+        });
+      });
+
+      document.getElementById('ex2-reset-btn').onclick = renderEx2VietnameseMatching;
+    }
+
+    /* EX 3: MULTIPLE CHOICE QUESTIONS */
+    function renderEx3MultipleChoice() {
+      const questions = [
+        {
+          q: "1. The luxury hotel features a spacious underground ______ with enough space for 200 cars.",
+          options: ["ballroom", "garage", "chandelier", "helipad"],
+          correct: 1,
+          exp: "A 'garage' is a building or indoor space specifically designed for parking motor vehicles."
+        },
+        {
+          q: "2. The VIP guests arrived by helicopter and landed directly on the rooftop ______.",
+          options: ["helipad", "lobby", "prayer room", "interior"],
+          correct: 0,
+          exp: "A 'helipad' is a landing pad for helicopters, frequently built on rooftops."
+        },
+        {
+          q: "3. Sunlight flooded into the room through expansive ______ windows that overlooked the ocean.",
+          options: ["multi-storey", "floor-to-ceiling", "unstable", "rare"],
+          correct: 1,
+          exp: "'Floor-to-ceiling' describes windows extending all the way from the floor to the ceiling."
+        },
+        {
+          q: "4. Critics often ______ the extravagant design of the building for being a wasteful display of wealth.",
+          options: ["criticise", "entertain", "land", "resemble"],
+          correct: 0,
+          exp: "'Criticise' means to express disapproval or point out faults in something."
+        },
+        {
+          q: "5. The penthouse features high-end finishes, such as floors made of pure Italian white ______.",
+          options: ["architecture", "chandelier", "marble", "residence"],
+          correct: 2,
+          exp: "'Marble' is a polished stone commonly used for luxury flooring and counters."
+        }
+      ];
+
+      const container = document.getElementById('ex3-questions-container');
+      container.innerHTML = questions.map((q, idx) => `
+        <div class="question-block">
+          <div class="question-text">${q.q}</div>
+          <div class="options-grid">
+            ${q.options.map((opt, oIdx) => `
+              <button class="option-btn" data-q="${idx}" data-opt="${oIdx}">${opt}</button>
+            `).join('')}
+          </div>
+          <div class="feedback-box" id="ex3-fb-${idx}"></div>
+        </div>
+      `).join('');
+
+      container.querySelectorAll('.option-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const qIdx = parseInt(btn.dataset.q);
+          const oIdx = parseInt(btn.dataset.opt);
+          const q = questions[qIdx];
+          const fb = document.getElementById(`ex3-fb-${qIdx}`);
+
+          const parent = btn.closest('.question-block');
+          parent.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected', 'correct', 'incorrect'));
+
+          if (oIdx === q.correct) {
+            btn.classList.add('correct');
+            fb.className = 'feedback-box show feedback-correct';
+            fb.innerHTML = `<strong>Correct!</strong> ${q.exp}`;
+          } else {
+            btn.classList.add('incorrect');
+            parent.querySelectorAll('.option-btn')[q.correct].classList.add('correct');
+            fb.className = 'feedback-box show feedback-incorrect';
+            fb.innerHTML = `<strong>Incorrect.</strong> ${q.exp}`;
+          }
+        });
+      });
+    }
+
+    /* EX 4: GAP FILL */
+    function renderEx4GapFill() {
+      const items = [
+        { word: "chandelier", sentence: "A crystal ______ hung from the tall ceiling of the dining room." },
+        { word: "vast", sentence: "The palace is surrounded by a ______ garden covering over 50 acres." },
+        { word: "living quarters", sentence: "The family kept their private ______ strictly separate from the reception hall." },
+        { word: "unstable", sentence: "Engineers warned that the hillside structure was structurally ______ after heavy rains." },
+        { word: "spectacular", sentence: "The balcony offers ______ views of the surrounding mountain ranges." }
+      ];
+
+      const wordBank = document.getElementById('gap-word-bank');
+      const questionsContainer = document.getElementById('ex4-questions-container');
+
+      const wordsShuffled = items.map(i => i.word).sort(() => Math.random() - 0.5);
+      wordBank.innerHTML = wordsShuffled.map(w => `<span class="word-chip">${w}</span>`).join('');
+
+      let wordBankVisible = true;
+      document.getElementById('toggle-word-bank-btn').onclick = () => {
+        wordBankVisible = !wordBankVisible;
+        wordBank.style.display = wordBankVisible ? 'flex' : 'none';
+        document.getElementById('toggle-word-bank-btn').textContent = wordBankVisible ? 'Hide Word Bank' : 'Show Word Bank';
+      };
+
+      questionsContainer.innerHTML = items.map((item, idx) => {
+        const parts = item.sentence.split('______');
+        return `
+          <div class="question-block">
+            <div class="question-text">
+              ${idx + 1}. ${parts[0]} <input type="text" class="gap-input" data-answer="${item.word}" id="gap-input-${idx}"> ${parts[1]}
+            </div>
+            <div class="feedback-box" id="gap-fb-${idx}"></div>
+          </div>
+        `;
+      }).join('');
+
+      document.getElementById('ex4-check-btn').onclick = () => {
+        items.forEach((item, idx) => {
+          const input = document.getElementById(`gap-input-${idx}`);
+          const fb = document.getElementById(`gap-fb-${idx}`);
+          const userVal = input.value.trim().toLowerCase();
+          const correctVal = item.word.toLowerCase();
+
+          input.classList.remove('correct', 'incorrect');
+          if (userVal === correctVal) {
+            input.classList.add('correct');
+            fb.className = 'feedback-box show feedback-correct';
+            fb.innerHTML = `<strong>Correct!</strong> '${item.word}' fits the context perfectly.`;
+          } else {
+            input.classList.add('incorrect');
+            fb.className = 'feedback-box show feedback-incorrect';
+            fb.innerHTML = `<strong>Incorrect.</strong> Correct answer: <strong>${item.word}</strong>.`;
+          }
+        });
+      };
+    }
+
+    /* EX 5: COLLOCATION MATCHING */
+    function renderEx5CollocationMatching() {
+      const items = COLLOCATIONS_DATA.slice(0, 6);
+      const colBeg = document.getElementById('ex5-col-beginnings');
+      const colEnd = document.getElementById('ex5-col-endings');
+
+      let selBeg = null;
+      let selEnd = null;
+
+      const begList = [...items].sort(() => Math.random() - 0.5);
+      const endList = [...items].sort(() => Math.random() - 0.5);
+
+      colBeg.innerHTML = begList.map(b => `<div class="match-item" data-id="${b.id}">${b.beginning}</div>`).join('');
+      colEnd.innerHTML = endList.map(e => `<div class="match-item" data-id="${e.id}">${e.ending}</div>`).join('');
+
+      const checkCollocation = () => {
+        if (selBeg && selEnd) {
+          if (selBeg.dataset.id === selEnd.dataset.id) {
+            selBeg.classList.add('matched');
+            selEnd.classList.add('matched');
+            selBeg = null;
+            selEnd = null;
+          } else {
+            selBeg.classList.add('wrong');
+            selEnd.classList.add('wrong');
+            setTimeout(() => {
+              if (selBeg) selBeg.classList.remove('wrong', 'selected');
+              if (selEnd) selEnd.classList.remove('wrong', 'selected');
+              selBeg = null;
+              selEnd = null;
+            }, 600);
+          }
+        }
+      };
+
+      colBeg.querySelectorAll('.match-item').forEach(el => {
+        el.addEventListener('click', () => {
+          colBeg.querySelectorAll('.match-item').forEach(i => i.classList.remove('selected'));
+          el.classList.add('selected');
+          selBeg = el;
+          checkCollocation();
+        });
+      });
+
+      colEnd.querySelectorAll('.match-item').forEach(el => {
+        el.addEventListener('click', () => {
+          colEnd.querySelectorAll('.match-item').forEach(i => i.classList.remove('selected'));
+          el.classList.add('selected');
+          selEnd = el;
+          checkCollocation();
+        });
+      });
+
+      document.getElementById('ex5-reset-btn').onclick = renderEx5CollocationMatching;
+    }
+
+    /* EX 6: ERROR CORRECTION */
+    function renderEx6ErrorCorrection() {
+      const questions = [
+        {
+          sentence: "Incorrect: The helicopter landed safely on the palace's grand ballroom.",
+          correctionLabel: "What should 'ballroom' be changed to?",
+          options: ["helipad", "garage", "lobby", "property"],
+          correct: 0,
+          exp: "Helicopters land on a 'helipad', not inside a ballroom used for dancing."
+        },
+        {
+          sentence: "Incorrect: The tall glass building was built with multi-storey marble windows.",
+          correctionLabel: "Which collocation accurately describes tall windows?",
+          options: ["floor-to-ceiling", "unstable", "living quarters", "prayer room"],
+          correct: 0,
+          exp: "The collocation is 'floor-to-ceiling windows', extending from bottom to top."
+        }
+      ];
+
+      const container = document.getElementById('ex6-questions-container');
+      container.innerHTML = questions.map((q, idx) => `
+        <div class="question-block">
+          <div class="question-text" style="color: var(--danger); font-weight: 600;">${q.sentence}</div>
+          <p style="font-size: 0.9rem; font-weight: 600; margin-bottom: 0.75rem;">${q.correctionLabel}</p>
+          <div class="options-grid">
+            ${q.options.map((opt, oIdx) => `
+              <button class="option-btn" data-q="${idx}" data-opt="${oIdx}">${opt}</button>
+            `).join('')}
+          </div>
+          <div class="feedback-box" id="ex6-fb-${idx}"></div>
+        </div>
+      `).join('');
+
+      container.querySelectorAll('.option-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const qIdx = parseInt(btn.dataset.q);
+          const oIdx = parseInt(btn.dataset.opt);
+          const q = questions[qIdx];
+          const fb = document.getElementById(`ex6-fb-${qIdx}`);
+          const parent = btn.closest('.question-block');
+
+          parent.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected', 'correct', 'incorrect'));
+
+          if (oIdx === q.correct) {
+            btn.classList.add('correct');
+            fb.className = 'feedback-box show feedback-correct';
+            fb.innerHTML = `<strong>Correct!</strong> ${q.exp}`;
+          } else {
+            btn.classList.add('incorrect');
+            parent.querySelectorAll('.option-btn')[q.correct].classList.add('correct');
+            fb.className = 'feedback-box show feedback-incorrect';
+            fb.innerHTML = `<strong>Incorrect.</strong> ${q.exp}`;
+          }
+        });
+      });
+    }
+
+    /* ==========================================================================
+       SECTION 3: VOCABULARY IN CONTEXT LOGIC
+       ========================================================================== */
+    function initReadingContext() {
+      // Setup Clickable Vocabulary Terms in Passages
+      const targets = document.querySelectorAll('.vocab-target');
+      const modal = document.getElementById('vocab-modal');
+      const closeBtn = document.getElementById('modal-close-btn');
+
+      targets.forEach(el => {
+        el.addEventListener('click', () => {
+          const wordKey = el.dataset.word.toLowerCase();
+          const item = VOCABULARY_DATA.find(v => v.word.toLowerCase() === wordKey) ||
+                       COLLOCATIONS_DATA.find(c => c.full.toLowerCase() === wordKey);
+
+          if (item) {
+            document.getElementById('modal-word').textContent = item.word || item.full;
+            document.getElementById('modal-pos').textContent = item.pos || "collocation";
+            document.getElementById('modal-vi').textContent = item.vi;
+            document.getElementById('modal-def').textContent = item.def || `Collocation expression meaning "${item.vi}".`;
+            document.getElementById('modal-example').textContent = item.example ? `"${item.example}"` : `Example usage: "${item.full}"`;
+            document.getElementById('modal-collocation').textContent = item.collocation || item.full;
+            modal.classList.add('active');
+          }
+        });
+      });
+
+      closeBtn.addEventListener('click', () => modal.classList.remove('active'));
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.classList.remove('active');
+      });
+
+      renderReadingQuestions();
+    }
+
+    function renderReadingQuestions() {
+      const questions = [
+        {
+          q: "1. According to Passage 1, why is Antilia considered extravagant?",
+          options: [
+            "It is built entirely underwater.",
+            "It is estimated to cost more than one billion dollars.",
+            "It only has one floor for living.",
+            "It is owned by the government."
+          ],
+          correct: 1
+        },
+        {
+          q: "2. What facility on top of Antilia allows helicopters to take off and land?",
+          options: ["underground garage", "crystal chandelier", "rooftop helipad", "private prayer room"],
+          correct: 2
+        },
+        {
+          q: "3. In Passage 2, what feature is used to bring in 'as much sunlight as possible'?",
+          options: ["Extensive marble columns", "Expansive glass roofs", "Underground garages", "Multi-storey walls"],
+          correct: 1
+        },
+        {
+          q: "4. What reason do critics give when they criticise steep hillside architecture?",
+          options: [
+            "It is too cheap to construct.",
+            "It might be structurally unstable.",
+            "It lacks reception areas.",
+            "It uses too much white marble."
+          ],
+          correct: 1
+        }
+      ];
+
+      const container = document.getElementById('reading-questions-container');
+      container.innerHTML = questions.map((q, idx) => `
+        <div class="question-block">
+          <div class="question-text" style="font-size: 0.95rem;">${q.q}</div>
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            ${q.options.map((opt, oIdx) => `
+              <button class="option-btn" style="font-size: 0.85rem; padding: 0.6rem 0.8rem;" data-rq="${idx}" data-ropt="${oIdx}">${opt}</button>
+            `).join('')}
+          </div>
+          <div class="feedback-box" id="rq-fb-${idx}"></div>
+        </div>
+      `).join('');
+
+      container.querySelectorAll('.option-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const qIdx = parseInt(btn.dataset.rq);
+          const oIdx = parseInt(btn.dataset.ropt);
+          const q = questions[qIdx];
+          const fb = document.getElementById(`rq-fb-${qIdx}`);
+          const parent = btn.closest('.question-block');
+
+          parent.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected', 'correct', 'incorrect'));
+
+          if (oIdx === q.correct) {
+            btn.classList.add('correct');
+            fb.className = 'feedback-box show feedback-correct';
+            fb.innerHTML = `<strong>Correct!</strong> Accurate interpretation of the reading passage.`;
+          } else {
+            btn.classList.add('incorrect');
+            parent.querySelectorAll('.option-btn')[q.correct].classList.add('correct');
+            fb.className = 'feedback-box show feedback-incorrect';
+            fb.innerHTML = `<strong>Incorrect.</strong> Check the passage context again.`;
+          }
+        });
+      });
+    }
+
+    /* ==========================================================================
+       SECTION 4: SENTENCE BUILDING LOGIC
+       ========================================================================== */
+    function initSentenceBuilding() {
+      renderScrambleExercises();
+      renderWritingPrompts();
+    }
+
+    function renderScrambleExercises() {
+      const items = [
+        {
+          id: "sc1",
+          targetWord: "spectacular",
+          words: ["The", "penthouse", "offers", "spectacular", "views", "of", "the", "city", "."],
+          solution: "The penthouse offers spectacular views of the city ."
+        },
+        {
+          id: "sc2",
+          targetWord: "living quarters",
+          words: ["The", "top", "floors", "serve", "as", "private", "living", "quarters", "."],
+          solution: "The top floors serve as private living quarters ."
+        }
+      ];
+
+      const container = document.getElementById('scramble-exercises-container');
+      container.innerHTML = items.map((item, idx) => `
+        <div class="question-block">
+          <div style="font-weight: 600; margin-bottom: 0.5rem;">Sentence ${idx + 1} (Target: <span style="color: var(--primary);">${item.targetWord}</span>)</div>
+          <div class="scramble-box" id="scramble-user-box-${idx}"></div>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem;" id="scramble-pool-box-${idx}">
+            ${[...item.words].sort(() => Math.random() - 0.5).map(w => `<span class="scramble-chip">${w}</span>`).join('')}
+          </div>
+          <div style="display: flex; gap: 0.5rem;">
+            <button class="btn btn-sm btn-primary" id="scramble-check-${idx}">Check Order</button>
+            <button class="btn btn-sm btn-outline" id="scramble-reset-${idx}">Reset</button>
+          </div>
+          <div class="feedback-box" id="scramble-fb-${idx}"></div>
+        </div>
+      `).join('');
+
+      items.forEach((item, idx) => {
+        const poolBox = document.getElementById(`scramble-pool-box-${idx}`);
+        const userBox = document.getElementById(`scramble-user-box-${idx}`);
+        const checkBtn = document.getElementById(`scramble-check-${idx}`);
+        const resetBtn = document.getElementById(`scramble-reset-${idx}`);
+        const fb = document.getElementById(`scramble-fb-${idx}`);
+
+        poolBox.querySelectorAll('.scramble-chip').forEach(chip => {
+          chip.addEventListener('click', () => {
+            userBox.appendChild(chip);
+          });
+        });
+
+        userBox.addEventListener('click', (e) => {
+          if (e.target.classList.contains('scramble-chip')) {
+            poolBox.appendChild(e.target);
+          }
+        });
+
+        resetBtn.onclick = () => {
+          const allChips = Array.from(userBox.children).concat(Array.from(poolBox.children));
+          allChips.sort(() => Math.random() - 0.5);
+          userBox.innerHTML = '';
+          poolBox.innerHTML = '';
+          allChips.forEach(c => poolBox.appendChild(c));
+          fb.className = 'feedback-box';
+        };
+
+        checkBtn.onclick = () => {
+          const userConstructed = Array.from(userBox.children).map(c => c.textContent).join(' ');
+          if (userConstructed.trim() === item.solution.trim()) {
+            fb.className = 'feedback-box show feedback-correct';
+            fb.innerHTML = `<strong>Perfect!</strong> Correct sentence order.`;
+          } else {
+            fb.className = 'feedback-box show feedback-incorrect';
+            fb.innerHTML = `<strong>Not quite right.</strong> Target answer: "<em>${item.solution}</em>"`;
+          }
+        };
+      });
+    }
+
+    function renderWritingPrompts() {
+      const prompts = [
+        {
+          word: "extravagant",
+          prompt: "Write a sentence describing a building or home with unnecessary luxuriously expensive features.",
+          model: "The palace features an extravagant dining hall adorned with gold leaf and rare paintings.",
+          tip: "'Extravagant' is an adjective. Place it before nouns (extravagant design) or after linking verbs (The house is extravagant)."
+        },
+        {
+          word: "criticise",
+          prompt: "Write a sentence expressing disapproval of a modern architectural project.",
+          model: "Many local residents criticise the architecture of the new glass tower for ruining the historic skyline.",
+          tip: "'Criticise' is a verb. Remember subject-verb agreement (e.g., 'Critics criticise...', 'He criticises...')."
+        }
+      ];
+
+      const container = document.getElementById('writing-prompts-container');
+      container.innerHTML = prompts.map((p, idx) => `
+        <div class="question-block">
+          <div style="font-weight: 700; color: var(--primary); font-size: 1.05rem; margin-bottom: 0.25rem;">
+            Target Word: ${p.word}
+          </div>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.75rem;">${p.prompt}</p>
+          <textarea class="writing-area" placeholder="Type your sentence here..." id="write-input-${idx}"></textarea>
+
+          <div style="display: flex; gap: 0.5rem; align-items: center;">
+            <button class="btn btn-sm btn-outline" id="btn-reveal-model-${idx}">Reveal Model Answer</button>
+          </div>
+
+          <div class="model-answer-box" id="model-box-${idx}">
+            <div style="font-weight: 700; color: var(--primary); margin-bottom: 0.25rem;">Model Answer:</div>
+            <div style="font-style: italic; margin-bottom: 0.5rem;">"${p.model}"</div>
+            <div style="font-size: 0.825rem; color: var(--secondary);">💡 <strong>Grammar Tip:</strong> ${p.tip}</div>
+          </div>
+        </div>
+      `).join('');
+
+      prompts.forEach((p, idx) => {
+        const btn = document.getElementById(`btn-reveal-model-${idx}`);
+        const box = document.getElementById(`model-box-${idx}`);
+
+        btn.onclick = () => {
+          if (box.style.display === 'block') {
+            box.style.display = 'none';
+            btn.textContent = 'Reveal Model Answer';
+          } else {
+            box.style.display = 'block';
+            btn.textContent = 'Hide Model Answer';
+          }
+        };
+      });
+    }
+
+    /* ==========================================================================
+       SECTION 5: FINAL COMPREHENSIVE TEST LOGIC
+       ========================================================================== */
+    const FINAL_TEST_QUESTIONS = [
+      {
+        id: 1,
+        word: "residence",
+        q: "1. A large, grand house where a high-profile person lives is called a private ______.",
+        options: ["residence", "helipad", "garage", "chandelier"],
+        correct: 0,
+        exp: "'Residence' refers to a house or place where someone lives."
+      },
+      {
+        id: 2,
+        word: "property",
+        q: "2. Real estate investors often purchase prime commercial ______ in major cities.",
+        options: ["architecture", "property", "lobby", "ballroom"],
+        correct: 1,
+        exp: "'Property' denotes land and buildings."
+      },
+      {
+        id: 3,
+        word: "extravagant",
+        q: "3. Spending millions on gold ceiling decorations is considered an ______ expenditure.",
+        options: ["unstable", "rare", "extravagant", "multi-storey"],
+        correct: 2,
+        exp: "'Extravagant' describes spending far more money than is reasonable."
+      },
+      {
+        id: 4,
+        word: "interior",
+        q: "4. Professional designers were hired to decorate the indoor space and ______ of the mansion.",
+        options: ["helipad", "interior", "garage", "facility"],
+        correct: 1,
+        exp: "'Interior' refers to the inside of a building."
+      },
+      {
+        id: 5,
+        word: "marble",
+        q: "5. The luxury hotel lobby floor was crafted from white polished ______.",
+        options: ["marble", "chandelier", "quarters", "view"],
+        correct: 0,
+        exp: "'Marble' is a high-end stone used for flooring."
+      },
+      {
+        id: 6,
+        word: "rare",
+        q: "6. The museum contains ______ architectural drawings that are hundreds of years old.",
+        options: ["unstable", "rare", "vast", "multi-storey"],
+        correct: 1,
+        exp: "'Rare' means uncommon and hard to find."
+      },
+      {
+        id: 7,
+        word: "spectacular",
+        q: "7. The rooftop bar provides ______ panoramic views across the coastline.",
+        options: ["spectacular", "unstable", "rare", "extravagant"],
+        correct: 0,
+        exp: "'Spectacular' means visually stunning and impressive."
+      },
+      {
+        id: 8,
+        word: "multi-storey",
+        q: "8. A building with ten distinct floors is classified as a ______ structure.",
+        options: ["multi-storey", "floor-to-ceiling", "reception area", "living quarters"],
+        correct: 0,
+        exp: "'Multi-storey' means having multiple levels or floors."
+      },
+      {
+        id: 9,
+        word: "garage",
+        q: "9. He parked his sports car inside the secure underground ______.",
+        options: ["lobby", "garage", "prayer room", "ballroom"],
+        correct: 1,
+        exp: "'Garage' is an enclosed parking space for vehicles."
+      },
+      {
+        id: 10,
+        word: "helipad",
+        q: "10. The hospital roof was built with a reinforced ______ for emergency helicopter landings.",
+        options: ["chandelier", "helipad", "facility", "residence"],
+        correct: 1,
+        exp: "'Helipad' is a landing surface for helicopters."
+      },
+      {
+        id: 11,
+        word: "lobby",
+        q: "11. Visitors check in at the main counter located inside the central hotel ______.",
+        options: ["lobby", "living quarters", "prayer room", "garage"],
+        correct: 0,
+        exp: "'Lobby' is the primary entrance hall of a public building."
+      },
+      {
+        id: 12,
+        word: "reception area",
+        q: "12. The receptionist greeted the guests warmly in the modern ______.",
+        options: ["reception area", "helipad", "marble", "unstable"],
+        correct: 0,
+        exp: "'Reception area' is where visitors are received."
+      },
+      {
+        id: 13,
+        word: "vast",
+        q: "13. The estate spreads across a ______ garden area spanning several square kilometers.",
+        options: ["vast", "unstable", "multi-storey", "rare"],
+        correct: 0,
+        exp: "'Vast' means extremely large in area."
+      },
+      {
+        id: 14,
+        word: "facility",
+        q: "14. The sports complex provides modern fitness ______ for all residents.",
+        options: ["facilities", "chandeliers", "helipads", "residences"],
+        correct: 0,
+        exp: "'Facility' refers to amenities or equipment provided for a purpose."
+      },
+      {
+        id: 15,
+        word: "prayer room",
+        q: "15. Family members gather for quiet reflection inside their private ______.",
+        options: ["prayer room", "garage", "helipad", "reception area"],
+        correct: 0,
+        exp: "'Prayer room' is dedicated to religious or quiet contemplation."
+      },
+      {
+        id: 16,
+        word: "ballroom",
+        q: "16. Hundreds of couples danced gracefully inside the magnificent grand ______.",
+        options: ["ballroom", "helipad", "garage", "living quarters"],
+        correct: 0,
+        exp: "'Ballroom' is a large room for formal dancing and parties."
+      },
+      {
+        id: 17,
+        word: "chandelier",
+        q: "17. An elegant crystal ______ illuminated the whole room from above.",
+        options: ["chandelier", "marble", "property", "architecture"],
+        correct: 0,
+        exp: "'Chandelier' is a decorative hanging ceiling light."
+      },
+      {
+        id: 18,
+        word: "living quarters",
+        q: "18. Staff members stay in separate ______ behind the main mansion.",
+        options: ["living quarters", "helipads", "floor-to-ceiling", "spectacular"],
+        correct: 0,
+        exp: "'Living quarters' are rooms designated for living and sleeping."
+      },
+      {
+        id: 19,
+        word: "criticise",
+        q: "19. Architectural experts often ______ designs that ignore environmental sustainability.",
+        options: ["criticise", "land", "entertain", "fill"],
+        correct: 0,
+        exp: "'Criticise' means to express disapproval or point out flaws."
+      },
+      {
+        id: 20,
+        word: "unstable",
+        q: "20. Without strong foundations, tall towers built on sand will remain ______. ",
+        options: ["unstable", "vast", "extravagant", "spectacular"],
+        correct: 0,
+        exp: "'Unstable' means prone to shaking, falling, or failing."
+      }
+    ];
+
+    function initFinalTest() {
+      const container = document.getElementById('test-questions-container');
+      const submitBtn = document.getElementById('btn-submit-test');
+      const retryBtn = document.getElementById('btn-retry-test');
+
+      // Shuffle test questions on initialization
+      const shuffledQuestions = [...FINAL_TEST_QUESTIONS].sort(() => Math.random() - 0.5);
+
+      container.innerHTML = shuffledQuestions.map((q, idx) => `
+        <div class="question-block" id="test-q-block-${idx}">
+          <div class="question-text">${idx + 1}. ${q.q.replace(/^\d+\.\s*/, '')}</div>
+          <div class="options-grid">
+            ${q.options.map((opt, oIdx) => `
+              <button class="option-btn" data-tq="${idx}" data-topt="${oIdx}">${opt}</button>
+            `).join('')}
+          </div>
+        </div>
+      `).join('');
+
+      container.querySelectorAll('.option-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (state.testSubmitted) return;
+          const qIdx = parseInt(btn.dataset.tq);
+          const oIdx = parseInt(btn.dataset.topt);
+
+          const parent = btn.closest('.question-block');
+          parent.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+          btn.classList.add('selected');
+
+          state.testAnswers[qIdx] = oIdx;
+        });
+      });
+
+      submitBtn.onclick = () => submitTest(shuffledQuestions);
+      retryBtn.onclick = () => {
+        state.testSubmitted = false;
+        state.testAnswers = {};
+        document.getElementById('test-questions-wrapper').classList.remove('hidden');
+        document.getElementById('test-results-container').classList.add('hidden');
+        initFinalTest();
+      };
+
+      startTestTimer();
+    }
+
+    function startTestTimer() {
+      if (state.testTimerInterval) clearInterval(state.testTimerInterval);
+      state.testStartTime = Date.now();
+
+      state.testTimerInterval = setInterval(() => {
+        const elapsed = Math.floor((Date.now() - state.testStartTime) / 1000);
+        const mins = String(Math.floor(elapsed / 60)).padStart(2, '0');
+        const secs = String(elapsed % 60).padStart(2, '0');
+        document.getElementById('test-timer-clock').textContent = `${mins}:${secs}`;
+      }, 1000);
+    }
+
+    function submitTest(questions) {
+      state.testSubmitted = true;
+      if (state.testTimerInterval) clearInterval(state.testTimerInterval);
+
+      let score = 0;
+      const masteredWords = [];
+      const reviewWords = [];
+
+      const reviewDetailsContainer = document.getElementById('test-review-details-container');
+      reviewDetailsContainer.innerHTML = '';
+
+      questions.forEach((q, idx) => {
+        const userChoice = state.testAnswers[idx];
+        const isCorrect = userChoice === q.correct;
+
+        if (isCorrect) {
+          score++;
+          masteredWords.push(q.word);
+        } else {
+          reviewWords.push(q.word);
+        }
+
+        // Render review block
+        const block = document.createElement('div');
+        block.className = 'question-block';
+        block.innerHTML = `
+          <div class="question-text">${idx + 1}. ${q.q.replace(/^\d+\.\s*/, '')}</div>
+          <div style="font-size: 0.9rem; margin-bottom: 0.5rem;">
+            <strong>Your Answer:</strong> ${userChoice !== undefined ? q.options[userChoice] : '<em>Not answered</em>'}
+            ${isCorrect ? ' <span style="color: var(--success); font-weight: 700;">(Correct ✅)</span>' : ' <span style="color: var(--danger); font-weight: 700;">(Incorrect ❌)</span>'}
+          </div>
+          ${!isCorrect ? `<div style="font-size: 0.9rem; color: var(--primary); font-weight: 600;">Correct Choice: ${q.options[q.correct]}</div>` : ''}
+          <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;">💡 Explanation: ${q.exp}</div>
+        `;
+        reviewDetailsContainer.appendChild(block);
+      });
+
+      // Show summary screen
+      document.getElementById('test-questions-wrapper').classList.add('hidden');
+      document.getElementById('test-results-container').classList.remove('hidden');
+
+      document.getElementById('results-score-num').textContent = score;
+      document.getElementById('count-mastered').textContent = masteredWords.length;
+      document.getElementById('count-review').textContent = reviewWords.length;
+
+      document.getElementById('mastered-tags-container').innerHTML = [...new Set(masteredWords)].map(w => `<span class="vocab-tag tag-mastered">${w}</span>`).join('') || '<em>None</em>';
+      document.getElementById('review-tags-container').innerHTML = [...new Set(reviewWords)].map(w => `<span class="vocab-tag tag-review">${w}</span>`).join('') || '<em>None</em>';
+
+      // Feedback text based on score
+      const feedbackText = document.getElementById('results-feedback');
+      if (score >= 18) {
+        feedbackText.textContent = "Outstanding performance! You have mastered Band 6.5+ IELTS reading vocabulary.";
+      } else if (score >= 14) {
+        feedbackText.textContent = "Good job! You have a solid grasp of most target vocabulary. Review the flagged words to reach perfection.";
+      } else {
+        feedbackText.textContent = "Keep practicing! Spend more time with the Flashcards and Context Reading sections to boost your score.";
+      }
+    }
+  </script>
+</body>
+</html>
